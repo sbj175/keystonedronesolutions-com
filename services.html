@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services — Keystone Drone Solutions, LLC</title>
+    <meta name="description" content="Explore our professional drone services: aerial photography, videography, mapping, data collection, inspections, and more.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav" id="nav">
+        <div class="nav__inner">
+            <a href="index.html" class="nav__logo">
+                <img src="https://storage.googleapis.com/kds-general/Public/keystone_drone_logo.png" alt="Keystone Drone Solutions" class="nav__logo-img">
+            </a>
+            <button class="nav__toggle" id="navToggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav__links" id="navLinks">
+                <li><a href="index.html" class="nav__link">Home</a></li>
+                <li><a href="services.html" class="nav__link active">Services</a></li>
+                <li><a href="contact.html" class="nav__link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Page Hero -->
+    <section class="page-hero">
+        <div class="page-hero__bg">
+            <canvas id="topoCanvas" class="hero__canvas"></canvas>
+            <div class="hero__gradient"></div>
+        </div>
+        <div class="container">
+            <div class="page-hero__content" data-animate="fade-up">
+                <span class="section-label">Our Services</span>
+                <h1 class="page-hero__title">Capabilities That<br><span class="hero__title-accent">Elevate</span></h1>
+                <p class="page-hero__subtitle">From aerial photography to precision mapping, we deliver data and visuals that drive decisions.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Grid -->
+    <section class="services-detail">
+        <div class="container">
+
+            <!-- Service 1 -->
+            <div class="service-block" data-animate="fade-up">
+                <div class="service-block__header">
+                    <div class="service-block__number">01</div>
+                    <div class="service-block__line"></div>
+                </div>
+                <div class="service-block__content">
+                    <h2 class="service-block__title">Mapping &amp; Data Collection</h2>
+                    <p class="service-block__desc">
+                        Precision aerial data capture for detailed orthomosaic maps, 3D terrain models,
+                        and volumetric measurements. Our mapping services turn raw aerial data into
+                        actionable intelligence for your projects.
+                    </p>
+                    <ul class="service-block__list">
+                        <li>Orthomosaic &amp; georeferenced maps</li>
+                        <li>3D point clouds &amp; terrain modeling</li>
+                        <li>Stockpile volumetric measurements</li>
+                        <li>Topographic data &amp; elevation mapping</li>
+                        <li>Agricultural crop health analysis (NDVI)</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Service 2 -->
+            <div class="service-block" data-animate="fade-up">
+                <div class="service-block__header">
+                    <div class="service-block__number">02</div>
+                    <div class="service-block__line"></div>
+                </div>
+                <div class="service-block__content">
+                    <h2 class="service-block__title">Aerial Photography &amp; Videography</h2>
+                    <p class="service-block__desc">
+                        High-resolution aerial imagery that transforms how you present properties,
+                        projects, and places. Our drone-captured photography and cinematic video
+                        provide perspectives that ground-level simply cannot achieve.
+                    </p>
+                    <ul class="service-block__list">
+                        <li>Real estate listings &amp; property marketing</li>
+                        <li>Construction progress documentation</li>
+                        <li>Commercial &amp; corporate promotional content</li>
+                        <li>Event coverage &amp; live-stream capable</li>
+                        <li>4K+ video with professional color grading</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Service 3 -->
+            <div class="service-block" data-animate="fade-up">
+                <div class="service-block__header">
+                    <div class="service-block__number">03</div>
+                    <div class="service-block__line"></div>
+                </div>
+                <div class="service-block__content">
+                    <h2 class="service-block__title">Infrastructure Inspections</h2>
+                    <p class="service-block__desc">
+                        Safe, cost-effective aerial inspections that eliminate the need for scaffolding,
+                        ladders, or crewed aircraft. Get detailed visual data of hard-to-reach structures
+                        without putting personnel at risk.
+                    </p>
+                    <ul class="service-block__list">
+                        <li>Roof &amp; building envelope inspections</li>
+                        <li>Cell tower &amp; utility line assessments</li>
+                        <li>Solar panel array diagnostics</li>
+                        <li>Bridge &amp; infrastructure condition reports</li>
+                        <li>Thermal imaging for energy audits</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Service 4 -->
+            <div class="service-block" data-animate="fade-up">
+                <div class="service-block__header">
+                    <div class="service-block__number">04</div>
+                    <div class="service-block__line"></div>
+                </div>
+                <div class="service-block__content">
+                    <h2 class="service-block__title">Construction &amp; Site Monitoring</h2>
+                    <p class="service-block__desc">
+                        Regular aerial documentation of construction sites provides project stakeholders
+                        with up-to-date visual progress reports, helping teams stay on schedule and
+                        identify potential issues early.
+                    </p>
+                    <ul class="service-block__list">
+                        <li>Scheduled progress flyovers</li>
+                        <li>Before/after site comparisons</li>
+                        <li>Earthwork &amp; grading verification</li>
+                        <li>Stakeholder &amp; investor reporting visuals</li>
+                        <li>Integration with project management platforms</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Service 5 -->
+            <div class="service-block" data-animate="fade-up">
+                <div class="service-block__header">
+                    <div class="service-block__number">05</div>
+                    <div class="service-block__line"></div>
+                </div>
+                <div class="service-block__content">
+                    <h2 class="service-block__title">Emergency &amp; Insurance Documentation</h2>
+                    <p class="service-block__desc">
+                        Rapid-deployment aerial documentation for storm damage, insurance claims,
+                        and disaster response. When time is critical, our team delivers fast,
+                        thorough coverage of affected areas.
+                    </p>
+                    <ul class="service-block__list">
+                        <li>Storm &amp; disaster damage assessment</li>
+                        <li>Insurance claim documentation</li>
+                        <li>Rapid-response deployment</li>
+                        <li>High-resolution damage cataloging</li>
+                        <li>Before/after comparison imaging</li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section class="process">
+        <div class="container">
+            <div class="section-header" data-animate="fade-up">
+                <span class="section-label">Our Process</span>
+                <h2 class="section-title">From Consultation<br>to Delivery</h2>
+            </div>
+            <div class="process__steps">
+                <div class="process__step" data-animate="fade-up" data-delay="0">
+                    <div class="process__step-num">1</div>
+                    <h3>Consultation</h3>
+                    <p>We discuss your goals, timeline, and site requirements to scope the mission precisely.</p>
+                </div>
+                <div class="process__connector" data-animate="fade-up" data-delay="50"></div>
+                <div class="process__step" data-animate="fade-up" data-delay="100">
+                    <div class="process__step-num">2</div>
+                    <h3>Flight Planning</h3>
+                    <p>We plan the mission — airspace authorization, flight paths, equipment selection, and safety checks.</p>
+                </div>
+                <div class="process__connector" data-animate="fade-up" data-delay="150"></div>
+                <div class="process__step" data-animate="fade-up" data-delay="200">
+                    <div class="process__step-num">3</div>
+                    <h3>Data Capture</h3>
+                    <p>On-site flight operations executed with precision, capturing exactly the data you need.</p>
+                </div>
+                <div class="process__connector" data-animate="fade-up" data-delay="250"></div>
+                <div class="process__step" data-animate="fade-up" data-delay="300">
+                    <div class="process__step-num">4</div>
+                    <h3>Delivery</h3>
+                    <p>Processed, polished deliverables — photos, video, maps, reports — on time and on spec.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta">
+        <div class="cta__bg">
+            <canvas id="ctaCanvas" class="cta__canvas"></canvas>
+        </div>
+        <div class="container">
+            <div class="cta__content" data-animate="fade-up">
+                <h2 class="cta__title">Have a Project in Mind?</h2>
+                <p class="cta__text">Every project is unique. Let's discuss yours and build a plan that fits.</p>
+                <a href="contact.html" class="btn btn--primary btn--large">
+                    Request a Quote
+                    <svg class="btn__arrow" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                        <path d="M4 10h12m0 0l-4-4m4 4l-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__inner">
+                <div class="footer__brand">
+                    <img src="https://storage.googleapis.com/kds-general/Public/keystone_drone_logo.png" alt="Keystone Drone Solutions" class="footer__logo">
+                    <p class="footer__tagline">Professional aerial services built on precision and trust.</p>
+                </div>
+                <div class="footer__links">
+                    <div class="footer__col">
+                        <h4 class="footer__heading">Navigation</h4>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="services.html">Services</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__col">
+                        <h4 class="footer__heading">Contact</h4>
+                        <ul>
+                            <li><a href="mailto:keystonedronecontact@gmail.com">keystonedronecontact@gmail.com</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <p>&copy; 2026 Keystone Drone Solutions, LLC. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

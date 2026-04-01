@@ -1,0 +1,8 @@
+.idea/
+main.py
+img.png
+assets/.gitkeep
+__pycache__/
+*.pyc
+.env
+.DS_Store

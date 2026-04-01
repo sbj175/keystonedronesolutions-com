@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact — Keystone Drone Solutions, LLC</title>
+    <meta name="description" content="Get in touch with Keystone Drone Solutions for a free consultation and quote on professional drone services.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav" id="nav">
+        <div class="nav__inner">
+            <a href="index.html" class="nav__logo">
+                <img src="https://storage.googleapis.com/kds-general/Public/keystone_drone_logo.png" alt="Keystone Drone Solutions" class="nav__logo-img">
+            </a>
+            <button class="nav__toggle" id="navToggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav__links" id="navLinks">
+                <li><a href="index.html" class="nav__link">Home</a></li>
+                <li><a href="services.html" class="nav__link">Services</a></li>
+                <li><a href="contact.html" class="nav__link active">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Page Hero -->
+    <section class="page-hero page-hero--compact">
+        <div class="page-hero__bg">
+            <canvas id="topoCanvas" class="hero__canvas"></canvas>
+            <div class="hero__gradient"></div>
+        </div>
+        <div class="container">
+            <div class="page-hero__content" data-animate="fade-up">
+                <span class="section-label">Get in Touch</span>
+                <h1 class="page-hero__title">Let's Talk About<br><span class="hero__title-accent">Your Project</span></h1>
+                <p class="page-hero__subtitle">Every mission starts with a conversation. Tell us what you need and we'll take it from there.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact">
+        <div class="container">
+            <div class="contact__layout">
+                <!-- Contact Info -->
+                <div class="contact__info" data-animate="fade-up">
+                    <div class="contact__info-card">
+                        <h3 class="contact__info-title">Reach Out Directly</h3>
+                        <div class="contact__info-item">
+                            <div class="contact__info-icon">
+                                <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
+                                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M22 6l-10 7L2 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <span class="contact__info-label">Email</span>
+                                <a href="mailto:keystonedronecontact@gmail.com" class="contact__info-value">keystonedronecontact@gmail.com</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contact__info-card">
+                        <h3 class="contact__info-title">What to Expect</h3>
+                        <div class="contact__expect-list">
+                            <div class="contact__expect-item">
+                                <div class="contact__expect-num">1</div>
+                                <div>
+                                    <strong>Quick Response</strong>
+                                    <p>We respond to all inquiries within 24 hours.</p>
+                                </div>
+                            </div>
+                            <div class="contact__expect-item">
+                                <div class="contact__expect-num">2</div>
+                                <div>
+                                    <strong>Free Consultation</strong>
+                                    <p>We'll discuss your project scope, timeline, and deliverables.</p>
+                                </div>
+                            </div>
+                            <div class="contact__expect-item">
+                                <div class="contact__expect-num">3</div>
+                                <div>
+                                    <strong>Custom Quote</strong>
+                                    <p>A detailed proposal tailored to your specific needs.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="contact__form-wrap" data-animate="fade-up" data-delay="100">
+                    <form class="contact-form" id="contactForm" action="https://formsubmit.co/keystonedronecontact@gmail.com" method="POST">
+                        <!-- FormSubmit config -->
+                        <input type="hidden" name="_subject" value="New inquiry from keystonedronesolutions.com">
+                        <input type="hidden" name="_captcha" value="true">
+                        <input type="hidden" name="_next" value="https://keystonedronesolutions.com/contact.html?submitted=true">
+                        <input type="text" name="_honey" style="display:none">
+
+                        <div class="form-group">
+                            <label for="name" class="form-label">Name</label>
+                            <input type="text" id="name" name="name" class="form-input" placeholder="Your full name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" id="email" name="email" class="form-input" placeholder="your@email.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone" class="form-label">Phone <span class="form-optional">(optional)</span></label>
+                            <input type="tel" id="phone" name="phone" class="form-input" placeholder="(555) 123-4567">
+                        </div>
+                        <div class="form-group">
+                            <label for="service" class="form-label">Service Interest</label>
+                            <select id="service" name="service" class="form-input form-select" required>
+                                <option value="" disabled selected>Select a service</option>
+                                <option value="Mapping & Data Collection">Mapping & Data Collection</option>
+                                <option value="Aerial Photography & Videography">Aerial Photography & Videography</option>
+                                <option value="Infrastructure Inspections">Infrastructure Inspections</option>
+                                <option value="Construction & Site Monitoring">Construction & Site Monitoring</option>
+                                <option value="Emergency & Insurance Documentation">Emergency & Insurance Documentation</option>
+                                <option value="Other / Not Sure">Other / Not Sure</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message" class="form-label">Project Details</label>
+                            <textarea id="message" name="message" class="form-input form-textarea" placeholder="Tell us about your project — location, timeline, deliverables you need..." rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn--primary btn--full">
+                            Send Message
+                            <svg class="btn__arrow" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <path d="M4 10h12m0 0l-4-4m4 4l-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </button>
+                    </form>
+                    <!-- Success Message -->
+                    <div class="contact-form__success" id="formSuccess" style="display:none;">
+                        <div class="contact-form__success-icon">
+                            <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+                                <circle cx="24" cy="24" r="20" stroke="currentColor" stroke-width="2.5"/>
+                                <path d="M16 24l6 6 10-12" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <h3>Message Sent</h3>
+                        <p>Thank you for reaching out. We'll be in touch within 24 hours.</p>
+                        <button class="btn btn--outline" onclick="document.getElementById('formSuccess').style.display='none';document.getElementById('contactForm').style.display='flex';document.getElementById('contactForm').reset();">
+                            Send Another Message
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__inner">
+                <div class="footer__brand">
+                    <img src="https://storage.googleapis.com/kds-general/Public/keystone_drone_logo.png" alt="Keystone Drone Solutions" class="footer__logo">
+                    <p class="footer__tagline">Professional aerial services built on precision and trust.</p>
+                </div>
+                <div class="footer__links">
+                    <div class="footer__col">
+                        <h4 class="footer__heading">Navigation</h4>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="services.html">Services</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__col">
+                        <h4 class="footer__heading">Contact</h4>
+                        <ul>
+                            <li><a href="mailto:keystonedronecontact@gmail.com">keystonedronecontact@gmail.com</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <p>&copy; 2026 Keystone Drone Solutions, LLC. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

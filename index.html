@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keystone Drone Solutions, LLC — Professional Aerial Services</title>
+    <meta name="description" content="Keystone Drone Solutions provides professional drone services including aerial photography, videography, mapping, inspections, and aerial data collection for commercial and residential clients.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav" id="nav">
+        <div class="nav__inner">
+            <a href="index.html" class="nav__logo">
+                <img src="https://storage.googleapis.com/kds-general/Public/keystone_drone_logo.png" alt="Keystone Drone Solutions" class="nav__logo-img">
+            </a>
+            <button class="nav__toggle" id="navToggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav__links" id="navLinks">
+                <li><a href="index.html" class="nav__link active">Home</a></li>
+                <li><a href="services.html" class="nav__link">Services</a></li>
+                <li><a href="contact.html" class="nav__link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero__bg">
+            <canvas id="topoCanvas" class="hero__canvas"></canvas>
+            <div class="hero__gradient"></div>
+        </div>
+        <div class="hero__content">
+            <div class="hero__badge" data-animate="fade-up">
+                <span class="hero__badge-dot"></span>
+                FAA Part 107 Certified
+            </div>
+            <h1 class="hero__title" data-animate="fade-up" data-delay="100">
+                Precision from<br>
+                <span class="hero__title-accent">Above</span>
+            </h1>
+            <p class="hero__subtitle" data-animate="fade-up" data-delay="200">
+                Professional drone services delivering exceptional aerial data,
+                photography, and inspections for commercial and residential clients.
+            </p>
+            <div class="hero__actions" data-animate="fade-up" data-delay="300">
+                <a href="services.html" class="btn btn--primary">
+                    Explore Services
+                    <svg class="btn__arrow" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                        <path d="M4 10h12m0 0l-4-4m4 4l-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </a>
+                <a href="contact.html" class="btn btn--outline">Get a Quote</a>
+            </div>
+        </div>
+        <div class="hero__scroll" data-animate="fade-up" data-delay="500">
+            <div class="hero__scroll-line"></div>
+            <span>Scroll</span>
+        </div>
+    </section>
+
+    <!-- Capabilities Section -->
+    <section class="capabilities">
+        <div class="container">
+            <div class="section-header" data-animate="fade-up">
+                <span class="section-label">What We Do</span>
+                <h2 class="section-title">Aerial Intelligence,<br>Grounded Expertise</h2>
+            </div>
+            <div class="capabilities__grid">
+                <div class="capability-card" data-animate="fade-up" data-delay="0">
+                    <div class="capability-card__icon">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                            <circle cx="16" cy="16" r="12" stroke="currentColor" stroke-width="2"/>
+                            <path d="M16 4a12 12 0 010 24" stroke="currentColor" stroke-width="2" stroke-dasharray="4 4"/>
+                            <circle cx="16" cy="16" r="3" stroke="currentColor" stroke-width="2"/>
+                            <path d="M16 8v5M16 19v5M8 16h5M19 16h5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <h3 class="capability-card__title">Mapping & Data Collection</h3>
+                    <p class="capability-card__text">High-resolution orthomosaic maps, 3D models, and topographic data for construction, agriculture, and land management.</p>
+                </div>
+                <div class="capability-card" data-animate="fade-up" data-delay="100">
+                    <div class="capability-card__icon">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                            <path d="M4 12l12-8 12 8v14a2 2 0 01-2 2H6a2 2 0 01-2-2V12z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M12 28V18h8v10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <h3 class="capability-card__title">Real Estate & Property</h3>
+                    <p class="capability-card__text">Stunning aerial photography and video that showcase properties from perspectives ground-level shots simply cannot match.</p>
+                </div>
+                <div class="capability-card" data-animate="fade-up" data-delay="200">
+                    <div class="capability-card__icon">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                            <rect x="4" y="6" width="24" height="18" rx="2" stroke="currentColor" stroke-width="2"/>
+                            <path d="M4 11h24" stroke="currentColor" stroke-width="2"/>
+                            <circle cx="8" cy="8.5" r="1" fill="currentColor"/>
+                            <circle cx="12" cy="8.5" r="1" fill="currentColor"/>
+                            <path d="M10 17l4 4 8-8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <h3 class="capability-card__title">Inspections</h3>
+                    <p class="capability-card__text">Safe, efficient aerial inspections of roofs, towers, solar panels, and infrastructure — reducing risk and downtime.</p>
+                </div>
+                <div class="capability-card" data-animate="fade-up" data-delay="300">
+                    <div class="capability-card__icon">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                            <path d="M4 16c0-6.627 5.373-12 12-12s12 5.373 12 12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            <path d="M8 16c0-4.418 3.582-8 8-8s8 3.582 8 8" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            <path d="M12 16a4 4 0 018 0" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            <circle cx="16" cy="16" r="1.5" fill="currentColor"/>
+                            <path d="M16 18v10" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            <path d="M12 28h8" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <h3 class="capability-card__title">Broadcast & Events</h3>
+                    <p class="capability-card__text">Dynamic aerial coverage for live events, film production, and marketing content that captivates audiences.</p>
+                </div>
+            </div>
+            <div class="capabilities__cta" data-animate="fade-up">
+                <a href="services.html" class="btn btn--primary">
+                    View All Services
+                    <svg class="btn__arrow" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                        <path d="M4 10h12m0 0l-4-4m4 4l-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Section -->
+    <section class="why">
+        <div class="container">
+            <div class="why__layout">
+                <div class="why__left" data-animate="fade-up">
+                    <span class="section-label">Why Keystone</span>
+                    <h2 class="section-title">Built on<br>Precision &amp; Trust</h2>
+                    <p class="why__text">
+                        We combine cutting-edge drone technology with rigorous safety standards
+                        and deep industry knowledge. Every flight is planned, every detail matters,
+                        and every deliverable exceeds expectations.
+                    </p>
+                </div>
+                <div class="why__right">
+                    <div class="stat-card" data-animate="fade-up" data-delay="0">
+                        <div class="stat-card__number">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <path d="M9 12l2 2 4-4" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M12 2L3 7v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V7l-9-5z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <h3 class="stat-card__label">FAA Compliant</h3>
+                        <p class="stat-card__desc">Part 107 certified with full insurance coverage. Safety is never an afterthought.</p>
+                    </div>
+                    <div class="stat-card" data-animate="fade-up" data-delay="100">
+                        <div class="stat-card__number">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2"/>
+                                <path d="M12 6v6l4 2" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <h3 class="stat-card__label">Fast Turnaround</h3>
+                        <p class="stat-card__desc">Efficient workflows mean you get polished deliverables on timeline, every time.</p>
+                    </div>
+                    <div class="stat-card" data-animate="fade-up" data-delay="200">
+                        <div class="stat-card__number">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2v10z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <h3 class="stat-card__label">Clear Communication</h3>
+                        <p class="stat-card__desc">From initial consultation to final delivery, you'll always know where your project stands.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="cta__bg">
+            <canvas id="ctaCanvas" class="cta__canvas"></canvas>
+        </div>
+        <div class="container">
+            <div class="cta__content" data-animate="fade-up">
+                <h2 class="cta__title">Ready to See Your World<br>from a New Perspective?</h2>
+                <p class="cta__text">Tell us about your project and we'll provide a custom quote within 24 hours.</p>
+                <a href="contact.html" class="btn btn--primary btn--large">
+                    Start a Conversation
+                    <svg class="btn__arrow" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                        <path d="M4 10h12m0 0l-4-4m4 4l-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__inner">
+                <div class="footer__brand">
+                    <img src="https://storage.googleapis.com/kds-general/Public/keystone_drone_logo.png" alt="Keystone Drone Solutions" class="footer__logo">
+                    <p class="footer__tagline">Professional aerial services built on precision and trust.</p>
+                </div>
+                <div class="footer__links">
+                    <div class="footer__col">
+                        <h4 class="footer__heading">Navigation</h4>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="services.html">Services</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__col">
+                        <h4 class="footer__heading">Contact</h4>
+                        <ul>
+                            <li><a href="mailto:keystonedronecontact@gmail.com">keystonedronecontact@gmail.com</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <p>&copy; 2026 Keystone Drone Solutions, LLC. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
