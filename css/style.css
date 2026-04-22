@@ -1046,7 +1046,7 @@ ul { list-style: none; }
 
 .footer__inner {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 2fr;
     gap: 3rem;
     padding-bottom: 3rem;
     border-bottom: 1px solid var(--color-border);
@@ -1065,8 +1065,13 @@ ul { list-style: none; }
 
 .footer__links {
     display: flex;
-    gap: 3rem;
+    gap: 2.5rem;
     justify-content: flex-end;
+    flex-wrap: wrap;
+}
+
+.footer__col {
+    flex: 0 0 auto;
 }
 
 .footer__heading {
@@ -1083,6 +1088,12 @@ ul { list-style: none; }
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
+}
+
+.footer__col li {
+    font-size: 0.9rem;
+    color: var(--color-text);
+    white-space: nowrap;
 }
 
 .footer__col a {
